@@ -4,8 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#090b12">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <meta name="description" content="GTA VI — фанатская промо-страница. Исследуй мир, смотри трейлеры и последние новости.">
-  <link rel="icon" href="./favicon.ico" sizes="any">
   <title>GTA VI — Welcome to Leonida</title>
   <style>
     :root{
@@ -67,7 +68,7 @@
     .card p{color:#d6d0d4;font-size:13px;margin:0;max-width:300px}
     .world{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
     .world-art{min-height:450px;position:relative;overflow:hidden;border-radius:5px;background:radial-gradient(circle at 70% 30%,#ffb27d,transparent 28%),linear-gradient(145deg,#243c52,#b45d69 60%,#f4a46d)}
-    .world-art:before{content:"";position:absolute;left:7%;bottom:8%;font-size:clamp(44px,8vw,100px);font-weight:900;letter-spacing:-.08em;color:rgba(255,255,255,.8)}
+    .world-art:before{content:"LEONIDA";position:absolute;left:7%;bottom:8%;font-size:clamp(44px,8vw,100px);font-weight:900;letter-spacing:-.08em;color:rgba(255,255,255,.8)}
     .world-art:after{content:"";position:absolute;right:10%;bottom:0;width:34%;height:65%;background:linear-gradient(90deg,#101522,#283144);clip-path:polygon(30% 0,48% 0,48% 20%,70% 20%,70% 38%,100% 38%,100% 100%,0 100%,0 35%,30% 35%)}
     .feature-list{display:grid;gap:18px;margin-top:32px}
     .feature{display:grid;grid-template-columns:42px 1fr;gap:15px;align-items:start}
@@ -141,72 +142,13 @@
     .brand-role{display:inline-block;font-size:10px;line-height:1;letter-spacing:.18em;font-weight:900;color:#fff;border:1px solid rgba(255,255,255,.75);padding:7px 9px;margin-left:2px;vertical-align:middle}
     @media(max-width:600px){.brand-role{font-size:8px;padding:6px 7px;letter-spacing:.12em}}
 
-  
-
-
-
-    .domain-sale{position:static;display:block;margin:15px 0 0;transform:none;color:#fff;font-family:Impact,"Arial Black",sans-serif;font-size:clamp(17px,2.3vw,27px);font-weight:900;letter-spacing:.16em;text-transform:uppercase;background:linear-gradient(90deg,#fff 0%,#fff 35%,#ff8fb8 58%,#ff4f91 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;text-shadow:0 0 16px rgba(255,105,165,.22);filter:drop-shadow(1px 2px 1px rgba(0,0,0,.8))}
-    .domain-sale span{color:inherit}
-    .domain-sale:before{display:none}
-    @media(max-width:600px){.domain-sale{margin-top:12px;font-size:clamp(15px,4vw,21px);letter-spacing:.1em}}
-
-    .main-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:27px 0 0}
-    .main-action{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 20px;border:1px solid rgba(255,255,255,.78);background:rgba(8,10,16,.42);color:#fff;text-decoration:none;font-size:11px;font-weight:950;letter-spacing:.12em;text-transform:uppercase;backdrop-filter:blur(8px);transition:background .18s,border-color .18s,transform .18s}
-    .main-action:hover{background:rgba(255,255,255,.16);border-color:#fff;transform:translateY(-2px)}
-    .main-action-primary{background:#fff;color:#10131b;border-color:#fff}
-    .main-action-primary:hover{background:#e8e8e8;color:#10131b}
-    @media(max-width:600px){.main-actions{gap:8px;margin-top:20px}.main-action{min-height:42px;padding:0 12px;font-size:9px;letter-spacing:.08em}}
-
-  
-    .topbar .nav{display:flex;align-items:center;justify-content:space-between;gap:24px}
-    .topbar .main-actions{display:flex;flex-wrap:nowrap;justify-content:flex-end;gap:8px;margin:0 0 0 auto}
-    .topbar .main-action{min-height:40px;padding:0 15px;font-size:10px;white-space:nowrap}
-    .topbar .main-action-primary{background:#fff;color:#10131b}
-    @media(max-width:760px){.topbar{height:auto;min-height:76px}.topbar .nav{padding-top:12px;padding-bottom:12px;align-items:flex-start;flex-direction:column;gap:12px}.topbar .main-actions{width:100%;justify-content:flex-start;flex-wrap:wrap;margin:0}.topbar .main-action{min-height:36px;padding:0 11px;font-size:9px}}
-
-  
-    /* Навигационные кнопки закреплены справа в верхней панели */
-    .topbar .nav{display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:20px}
-    .topbar .main-actions{margin-left:auto!important;margin-right:0!important;justify-content:flex-end!important;align-items:center;flex-wrap:nowrap;width:auto}
-    @media(max-width:760px){
-      .topbar .nav{flex-direction:row;align-items:center;flex-wrap:wrap}
-      .topbar .main-actions{width:100%;justify-content:flex-end!important;flex-wrap:wrap}
-    }
-
-  
-    /* Поднимаем блок кнопок выше в правой части шапки */
-    .topbar .main-actions{transform:translateY(-10px)}
-    @media(max-width:760px){.topbar .main-actions{transform:translateY(-4px)}}
-
-  
-    /* Gold accent for the DONATE navigation button */
-    .topbar .main-action[data-link-needed="donate"]{
-      color:#241807;
-      background:linear-gradient(135deg,#fff0b0 0%,#e4b84f 38%,#b77a19 72%,#f8dc83 100%);
-      border:1px solid #f7df9a;
-      box-shadow:0 0 14px rgba(224,174,65,.34),inset 0 1px 0 rgba(255,255,255,.55);
-      text-shadow:0 1px 0 rgba(255,255,255,.25);
-    }
-    .topbar .main-action[data-link-needed="donate"]:hover{
-      background:linear-gradient(135deg,#fff6cc 0%,#f1cc68 42%,#c88b27 76%,#ffebaa 100%);
-      border-color:#fff0bd;
-      box-shadow:0 0 22px rgba(255,203,83,.55);
-    }
-
   </style>
 </head>
 <body>
   <header class="topbar">
     <div class="container nav">
-      <a class="brand" href="#home" aria-label="GTA VI ROLE PLAY">GTA <span>VI</span><small class="brand-role">ROLE PLAY</small></a>
-      <nav class="main-actions" aria-label="Основные разделы">
-          <!-- Замени href="#" на реальные ссылки разделов проекта -->
-          <a class="main-action" href="#" data-link-needed="forum">ФОРУМ</a>
-          <a class="main-action" href="#" data-link-needed="donate">ДОНАТ</a>
-          <a class="main-action" href="#" data-link-needed="client">СКАЧАТЬ КЛИЕНТ</a>
-          <a class="main-action main-action-primary" href="#" data-link-needed="register">РЕГИСТРАЦИЯ</a>
-        </nav>
-      
+      <a class="brand" href="#home" aria-label="GTA VI ROLE PLAY">GTA <span>VI</span><small class="brand-role">SAMP ROLE PLAY</small></a>
+      <div class="sale-tag">ДОМЕН В ПРОДАЖЕ</div>
     </div>
   </header>
 
@@ -220,12 +162,10 @@
           referrerpolicy="strict-origin-when-cross-origin"></iframe>
       </div>
       <div class="container hero-content sale-content">
-        <div class="eyebrow">Grand Theft Auto VI</div>
-        
+        <div class="eyebrow">Grand Theft Auto VI · Leonida</div>
+        <h1 class="sale-title">ДОМЕН<br><span>В ПРОДАЖЕ</span></h1>
         <div class="sale-game">GTA VI <span>ROLE PLAY</span></div>
-        <div class="domain-sale">ДОМЕН В ПРОДАЖЕ</div>
-        
-        <a class="telegram-link" href="https://t.me/gta6rp_com_ua" target="_blank" rel="noopener noreferrer">
+        <a class="telegram-link" href="https://t.me/gta6_sampRP" target="_blank" rel="noopener noreferrer">
           <span class="telegram-icon" aria-hidden="true">➤</span>
           НАПИСАТЬ В TELEGRAM
         </a>
