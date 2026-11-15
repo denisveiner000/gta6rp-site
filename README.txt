@@ -1,12 +1,6 @@
-SEO PACKAGE — gta6-rp.com.ua
+SEO PACKAGE — gta6-rp.com.ua (Ukrainian primary language)
 
-Files:
-- index.html: updated page with SEO title, description, canonical, Open Graph, Twitter metadata, JSON-LD and visible project description.
-- robots.txt: allows search engines and points to the sitemap.
-- sitemap.xml: lists the homepage.
-- favicon.ico: site icon.
-
-Upload all files to the root of the GitHub Pages repository (same level as index.html).
+Upload index.html, robots.txt, sitemap.xml and favicon.ico to the repository root.
 After deployment, submit https://gta6-rp.com.ua/sitemap.xml in Google Search Console.
-
-Important: indexing is not guaranteed or instant. Google decides when and whether to index and rank a page. The project description intentionally does not claim that a playable server/client is already available.
+The project is an independent fan project, not an official Rockstar Games product.
+Google controls indexing and ranking; no placement is guaranteed.
